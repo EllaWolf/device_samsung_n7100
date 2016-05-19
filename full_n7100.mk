@@ -18,7 +18,7 @@
 PRODUCT_COPY_FILES := device/samsung/n7100/configs/apns-full-conf.xml:system/etc/apns-conf.xml
 
 # Inherit from the common Open Source product configuration
-$(call inherit-product, $(SRC_TARGET_DIR)/product/aosp_base_telephony.mk)
+$(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
 $(call inherit-product, frameworks/native/build/phone-xhdpi-2048-dalvik-heap.mk)
 
 PRODUCT_NAME := full_n7100
@@ -36,5 +36,5 @@ PRODUCT_BUILD_PROP_OVERRIDES += \
     PRIVATE_BUILD_DESC="t03gxx-user 4.4.2 KOT49H N7100XXUFND3 release-keys" \
     BUILD_FINGERPRINT="samsung/t03gxx/t03g:4.4.2/KOT49H/N7100XXUFND3:user/release-keys"
 
-$(call inherit-product, device/samsung/n7100/device.mk)
-$(call inherit-product-if-exists, vendor/samsung/n7100/device-vendor.mk)
+$(call inherit-product, device/samsung/n7100/n7100.mk)
+$(call inherit-product-if-exists, vendor/samsung/n7100/n7100-vendor.mk)
