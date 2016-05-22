@@ -24,6 +24,9 @@ BOARD_PROVIDES_LIBRIL := true
 BOARD_MODEM_TYPE := xmm6262
 BOARD_RIL_CLASS := ../../../hardware/samsung/ril
 
+# Graphics
+TARGET_REQUIRES_SYNCHRONOUS_SETSURFACE := true
+
 # Bluetooth
 BOARD_BLUETOOTH_BDROID_BUILDCFG_INCLUDE_DIR := device/samsung/n7100/bluetooth
 
